@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MInhas Anotações-->
+        <!--Minhas Anotações-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Minhas_Anotac_o_es" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,53 +18,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="fau-7W-WEe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-se-0dk">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Aze-dp-gvO">
-                                <rect key="frame" x="10" y="101" width="300" height="252"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iUS-iw-j2K">
+                                <rect key="frame" x="10" y="84" width="300" height="282"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d0I-ZI-dH9">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="214"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N30-1U-PQc">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="238"/>
                                         <color key="backgroundColor" red="0.9957384467124939" green="0.98301678895950317" blue="0.76314753293991089" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQH-ep-ikp">
-                                        <rect key="frame" x="0.0" y="214" width="300" height="38"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqN-zG-5To">
+                                        <rect key="frame" x="0.0" y="238" width="300" height="44"/>
                                         <state key="normal" image="botao_salvar"/>
                                         <connections>
-                                            <action selector="btnSalvar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kso-0B-Wud"/>
+                                            <action selector="btnSalvar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t56-Q4-kcO"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="aQH-ep-ikp" secondAttribute="trailing" constant="10" id="Ys1-Gd-cB7"/>
-                                    <constraint firstAttribute="height" constant="252" id="bw2-bk-gox"/>
-                                    <constraint firstItem="aQH-ep-ikp" firstAttribute="leading" secondItem="Aze-dp-gvO" secondAttribute="leading" constant="10" id="xZP-qC-g5x"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Aze-dp-gvO" secondAttribute="trailing" constant="10" id="6cp-XT-1rB"/>
-                            <constraint firstItem="fau-7W-WEe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LAq-Cf-C7S"/>
-                            <constraint firstItem="fau-7W-WEe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Smz-Bt-wYN"/>
-                            <constraint firstItem="fau-7W-WEe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zi5-tD-f3S"/>
-                            <constraint firstItem="Aze-dp-gvO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="rZA-a7-8El"/>
-                            <constraint firstItem="Aze-dp-gvO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="vXT-X6-RIN"/>
-                            <constraint firstItem="fau-7W-WEe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zSN-rQ-tOL"/>
+                            <constraint firstItem="iUS-iw-j2K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="K6P-6u-cAo"/>
+                            <constraint firstItem="hEy-se-0dk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NTq-CZ-WUX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hEy-se-0dk" secondAttribute="bottom" id="Raq-Oc-7pq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hEy-se-0dk" secondAttribute="trailing" id="W7j-M0-0ms"/>
+                            <constraint firstItem="iUS-iw-j2K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lpT-wP-FpA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iUS-iw-j2K" secondAttribute="bottom" constant="202" id="oMH-cQ-Z19"/>
+                            <constraint firstItem="hEy-se-0dk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uCd-Kj-Z99"/>
+                            <constraint firstAttribute="trailing" secondItem="iUS-iw-j2K" secondAttribute="trailing" constant="10" id="ztm-nB-L11"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="MInhas Anotações" id="Lu8-ow-v6d"/>
+                    <navigationItem key="navigationItem" title="Minhas Anotações" id="Lu8-ow-v6d"/>
                     <connections>
-                        <outlet property="textoCampo" destination="d0I-ZI-dH9" id="XcL-ok-RDH"/>
+                        <outlet property="textoCampo" destination="N30-1U-PQc" id="Ulw-2o-xY7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="532.5" y="133.09859154929578"/>
+            <point key="canvasLocation" x="521.25" y="132.04225352112675"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OE3-za-bDR">
